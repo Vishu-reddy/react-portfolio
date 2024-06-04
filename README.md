@@ -10,4 +10,4 @@ Currently, two official plugins are available:
 #commands to run
 >>> cd react-portfolio
 >>> npm install
->>> npm run dev
+>>> npm run dev 
