@@ -1,0 +1,125 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 79px;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* height: 80vh; */
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 40px;
+}
+.card {
+  background-image: linear-gradient(180deg, #576cbc 0%, #132a53 100%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 345px;
+  height: 450px;
+  transition: 0.4s;
+  /* overflow: scroll; */
+}
+.card:hover {
+  -webkit-box-shadow: 0px 0px 50px 4px rgba(46, 133, 255, 0.9);
+  -moz-box-shadow: 0px 0px 50px 4px rgba(46, 133, 255, 0.9);
+  box-shadow: 0px 0px 50px 4px rgba(46, 133, 255, 0.9);
+}
+.img {
+  width: 298px;
+  height: 200px;
+  margin-top: 18px;
+  padding: 10px;
+}
+.description {
+  margin-top: 6px;
+  font-size: 25px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.tech {
+  width: 200px;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 60px;
+  /* align-items: ; */
+  gap: 6px;
+  /* width: 50px; */
+  justify-content: space-evenly;
+}
+.tech h5 {
+  background-color: var(--color-bg);
+  padding: 7px;
+  border-radius: 10px;
+  font-family: var(--font-robot);
+}
+
+/* CSS */
+.repobtn {
+  align-items: center;
+  appearance: none;
+  background-color: #3eb2fd;
+  background-image: linear-gradient(1deg, #4f58fd, #149bf3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd, sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, background-position 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  margin-top: 10px;
+}
+
+.repobtn:active,
+.repobtn:focus {
+  outline: none;
+}
+
+.repobtn:hover {
+  background-position: -20px -20px;
+}
+
+.repobtn:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 0.125em;
+}
+.repobtn a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 830px) {
+  .cards {
+    flex-direction: column;
+  }
+}
